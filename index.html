@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noyon future signals</title>
+    <title>Tousif future signals</title>
     <style>
         body {
             background-image: url('https://files.catbox.moe/uibkmt.jpeg');
@@ -273,4 +273,136 @@
                             <option value="Quotex">Quotex</option>
                             <option value="Binomo">Binomo</option>
                             <option value="IQ Option">IQ Option</option>
-                       
+                            <option value="Olymp Trade">Olymp Trade</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="cbAtivo">
+
+                <div class="split-size">
+                    <div class="form-group">
+                        <label class="control-label" for="selPercentageMin">Minimum Percentage:</label>
+                        <select class="form-control" name="minutos_offset" id="selPercentageMin">
+                            <option value="90">90%</option>
+                            <option value="91">91%</option>
+                            <option value="92">92%</option>
+                            <option value="93">93%</option>
+                            <option value="94">94%</option>
+                            <option value="95" selected>95%</option>
+                            <option value="96">96%</option>
+                            <option value="97">97%</option>
+                            <option value="98">98%</option>
+                            <option value="99">99%</option>
+                            <option value="100">100%</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="selPercentageMax">Maximum Percentage:</label>
+                        <select class="form-control" name="minutos_offset" id="selPercentageMax">
+                            <option value="97">97%</option>
+                            <option value="98">98%</option>
+                            <option value="99">99%</option>
+                            <option value="100" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+                
+
+                <div class="split-size">
+                    <div class="form-group">
+                        <label class="control-label" for="selCandleTime">Expiration Time:</label>
+                        <select class="form-control" name="cbTimeFrame" id="selCandleTime">
+                            <option value="M1" selected>M1</option>
+                            <option value="M2">M2</option>
+                            <option value="M5">M5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="selDays">Number Of Days To Analyze:</label>
+                        <select class="form-control" name="Values To Check" id="selDays">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30" selected>30</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <b><label class="control-label" for="selOrderType"><p>Select Option Below (Call/Put):</p></label></b>
+                    <select class="form-control" name="cbTimeFrame" id="selOrderType">
+                        <option value="PUT" selected>PUT</option>
+                        <option value="CALL">CALL</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="getHistoric()">Generate Signals</button>
+
+                <div class="center">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- New Modal -->
+    <div class="new-modal">
+        <div class="new-modal-content">
+            <div class="new-modal-tit">Welcome to Tousif future signals!</div>
+            <div class="new-modal-text">Join our Telegram channel for free bots.</div>
+            <div class="new-modal-buttons">
+                <button class="new-modal-close">Close</button>
+                <button class="new-modal-join" onclick="window.location.href='https://t.me/tousiftrader100'">Join</button>
+            </div>
+        </div>
+    </div>
+</div>
+		<script src="assets/script.js"></script>
+<script>
+    // JavaScript to show the new modal after loading the page and login is complete
+    window.onload = function() {
+        setTimeout(function() {
+            document.querySelector('.new-modal').style.display = 'flex';
+        }, 2000); // Adjust the delay as needed
+    };
+
+    document.querySelector('.new-modal-close').addEventListener('click', function() {
+        document.querySelector('.new-modal').style.display = 'none';
+    });
+</script>
+
+    <!-- Script imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    	</body>
+	</html>
+	
